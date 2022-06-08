@@ -9,13 +9,10 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
-  max-height: 1080px;
-  min-height: 1080px;
-  margin-bottom: 50px;
   overflow-x: hidden;
 }
 #landing .grid-container {
-  margin: auto;
+  margin: 120px auto auto;
 }
 #landing #landing-image {
   width: 100%;
@@ -83,7 +80,6 @@ body {
   background: url("assets/VISIO-Grafikelemente-Web-0_0009.png") no-repeat 35% 60%;
   background-size: 420px 561px;
   margin-bottom: 100px;
-  margin-top: 50px;
 }
 
 .description-text-desktop {
