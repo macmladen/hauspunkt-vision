@@ -1,0 +1,704 @@
+body {
+  margin:0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+#landing {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-height: 1080px;
+  min-height: 1080px;
+  margin-bottom: 50px;
+  overflow-x: hidden;
+  .grid-container {
+    margin: auto;
+  }
+  #landing-image {
+    width: 100%;
+    margin: auto;
+    max-width: 945px;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+  }
+  #logo {
+    text-align: left;
+    //margin-top: 210px;
+    width: 550px;
+    height: auto;
+    max-height: 170px;
+    object-fit: contain;
+    object-position: center center;
+    margin: auto auto 50px;
+  }
+  h1 {
+    /*font-size: 30px;*/
+    max-width: 550px;
+    line-height: 80px;
+    letter-spacing: 10px;
+    margin-bottom: 0;
+  }
+  #desktop-text-block {
+    max-width: 550px;
+    .decorated-text {
+      margin-top: auto;
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 25px;
+      span {
+        font-weight: 900;
+      }
+    }
+    .decorated-text:nth-child(1) {
+      letter-spacing: 22px;
+    }
+    .decorated-text:nth-child(2) {
+      letter-spacing: 25px;
+    }
+    .decorated-text:nth-child(3) {
+      letter-spacing: 16px;
+    }
+    .decorated-text:nth-child(4) {
+      letter-spacing: 12.5px;
+    }
+  }
+  #mobile-text-block {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    .navbar-nav {
+      margin-left: auto;
+      margin-right: 0;
+      display: flex;
+      flex-direction: initial;
+    }
+  }
+}
+
+#description {
+  height: auto;
+  //padding: 0 200px 50px 50px;
+  background: url('assets/VISIO-Grafikelemente-Web-0_0009.png') no-repeat 35% 60%;
+  background-size: 420px 561px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.description-text-desktop {
+  font-size: 24px;
+  //max-width: 768px;
+}
+
+.description-text-mobile {
+  font-size: 16px;
+}
+#promo {
+  display: flex;
+  .video-container {
+    margin: auto;
+    background: url('assets/VISIO-Grafikelemente-Web-0_0008.png') no-repeat 95% -13.5%;
+    background-size: 360px 360px;
+    display: flex;
+    min-height: 612px;
+    max-width: 1024px;
+    iframe {
+      width: 100%;
+      min-height: 520px;
+      max-width: 800px;
+      max-height: 520px;
+      margin: auto;
+    }
+  }
+}
+#events {
+  background: url('assets/VISIO-Grafikelemente-Web-0_0007.png') no-repeat 0 0;
+  background-size: 357px 449px;
+  //min-height: 980px;
+  .events-container {
+    max-width: 920px;
+    margin: auto;
+    padding-left: 57px;
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: 20px;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+    .event-description {
+      max-width: 780px;
+      font-size: 24px;
+      //letter-spacing: 20px;
+    }
+    #calendar {
+      margin-top: 120px;
+      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      .calendar-box {
+        display: grid;
+        width: 232px;
+        height: 232px;
+        //border: 8px solid black;
+        //background: linear-gradient(135deg, #ED4825, #F58F3B);
+        div {
+          min-width: 140px;
+          width: 100%;
+          min-height: 140px;
+          padding: 44px 50px;
+          grid-column: 1;
+          grid-row: 1;
+          color: #fff;
+          font-weight: 900;
+          margin: auto;
+          font-size: 106px;
+          line-height: 130px;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+        }
+      }
+      .calendar-box-title {
+        font-size: 44px;
+        line-height: 60px;
+        color: #F3712F;
+        width: 232px;
+        text-align: center;
+      }
+    }
+    .event-grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-column-gap: 44px;
+      width: 100%;
+      max-width: 576px;
+      overflow: hidden;
+      .etd-bold {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 32px;
+        word-wrap: break-word;
+      }
+      .etd-normal{
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+#newsletter {
+  background: url('assets/VISIO-Grafikelemente-Web-0_0006.png') no-repeat 90% 90%;
+  background-size: 150px 150px;
+  display: flex;
+  margin-top: 50px;
+  .card {
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);
+    padding: 32px ;
+    max-width: 1220px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+    background: #838487;
+    border: 1px solid #838487;
+    border-radius: 0;
+    h3 {
+      font-size: 38px;
+      line-height: 52px;
+      margin-bottom: 12px;
+      color: #fff;
+      font-weight: 900;
+    }
+    h5 {
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 32px;
+      color: #fff;
+      font-weight: 700;
+    }
+    .row {
+      .col-md-12 {
+        padding: 0;
+      }
+    }
+    input {
+      border: 1px solid #fff;
+      border-radius: 0;
+      font-size: 24px;
+    }
+    button {
+      color: #fff;
+      font-size: 24px;
+      background-image: linear-gradient(135deg, #ED4825, #F58F3B);
+      border: 1px solid transparent;
+      border-radius: 0;
+      max-width: 230px;
+      width: 100%;
+    }
+  }
+}
+#footer {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  background: #404041;
+  .copyright {
+    color: #EBB236;
+  }
+  .row {
+    margin: auto;
+    max-width: 1220px;
+    width: 100%;
+  }
+  .copy {
+    margin: auto;
+    margin-left: 0;
+  }
+  .links {
+    margin: auto;
+    margin-right: 0;
+    border: none;
+  }
+  ul {
+    max-width: 350px;
+    text-decoration: none;
+    padding-left: 0;
+    li {
+      list-style-type: none;
+      font-weight: 400;
+      a {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  #landing {
+    height: 100%;
+    min-height: max-content;
+    .navbar {
+      font-size: 24px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      .grid-item:nth-child(1) {
+        grid-row: 2;
+        grid-column: 1;
+        #landing-image {
+          //max-width: 512px;
+          height: auto;
+          margin: auto;
+        }
+      }
+      .grid-item:nth-child(2) {
+        grid-row: 1;
+        grid-column: 1;
+        margin: auto;
+        #logo {
+          width: 100%;
+          height: auto;
+          max-height: 120px;
+          margin: auto;
+          margin-bottom: 25px;
+        }
+        #desktop-text-block {
+          display: none;
+        }
+      }
+      .grid-item:nth-child(3) {
+        #mobile-text-block {
+          display: block !important;
+          margin: auto;
+          max-width: 470px;
+          padding-top: 50px;
+          .decorated-text {
+            font-size: 24px;
+            line-height: 48px;
+            margin-bottom: 12px;
+            span {
+              font-weight: 900;
+            }
+          }
+          .decorated-text:nth-child(1) {
+            letter-spacing: 22px;
+          }
+          .decorated-text:nth-child(2) {
+            letter-spacing: 25px;
+          }
+          .decorated-text:nth-child(3) {
+            letter-spacing: 16.7px;
+          }
+          .decorated-text:nth-child(4) {
+            letter-spacing: 14px;
+          }
+        }
+      }
+    }
+  }
+  #description {
+    background: none !important;
+    .description-text-mobile {
+      margin: 50px auto 25px auto;
+      max-width: 576px;
+    }
+  }
+  #events {
+    background: none;
+    //background-size: 357px 449px;
+    //min-height: 980px;
+    .events-container {
+      max-width: 576px;
+      margin: auto;
+      padding-left: 0;
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 20px;
+        margin-bottom: 40px;
+        font-weight: 700;
+      }
+      .event-description {
+        max-width: 576px;
+        font-size: 24px;
+        //letter-spacing: 20px;
+      }
+      #calendar {
+        max-width: 576px;
+        margin-top: 120px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        .calendar-box {
+          display: grid;
+          width: auto;
+          height: auto;
+          //border: 8px solid black;
+          //background: linear-gradient(135deg, #ED4825, #F58F3B);
+          div {
+            padding: 25px 35px;
+            grid-column: 1;
+            grid-row: 1;
+            color: #fff;
+            font-weight: 900;
+            margin: auto;
+            font-size: 53px;
+            line-height: 80px;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+          }
+        }
+        .calendar-box-title {
+          font-size: 24px;
+          line-height: normal;
+          color: #F3712F;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .event-grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-column-gap: 44px;
+        width: 100%;
+        max-width: 576px;
+        overflow: hidden;
+        .etd-bold {
+          font-size: 24px;
+          font-weight: 900;
+          line-height: 24px;
+          word-wrap: break-word;
+        }
+        .etd-normal{
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  #newsletter {
+    .card {
+      margin-bottom: 0;
+    }
+  }
+  #footer {
+    padding-top: 20px;
+    .copy {
+      margin: auto auto 12px;
+      margin-left: 0;
+    }
+    .links {
+      //border-top: 1px solid rgba(204, 204, 204, 0.08);
+      padding-top: 12px;
+      margin-left: 0;
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1304px){
+  .mobile-text-block {
+    margin-bottom: 50px;
+    min-height: 300px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .mobile-link {
+    font-size: 24px !important;
+  }
+  #landing {
+    width: 100%;
+    height: 100%;
+    min-height: max-content;
+    max-width: 375px;
+    .grid-container {
+      max-width: 375px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      .grid-item:nth-child(1) {
+        grid-row: 2;
+        grid-column: 1;
+        #landing-image {
+          height: auto;
+          margin: unset;
+        }
+      }
+      .grid-item:nth-child(2) {
+        grid-row: 1;
+        grid-column: 1;
+        max-width: calc(100% - var(--bs-gutter-x));
+        padding-left: 0;
+        #logo {
+          height: auto;
+          max-height: 80px;
+          max-width: calc(100% - var(--bs-gutter-x));
+          margin: unset;
+        }
+        #desktop-text-block {
+          display: none;
+        }
+      }
+      .grid-item:nth-child(3) {
+        #mobile-text-block {
+          display: block !important;
+          margin: auto;
+          max-width: 375px;
+          .decorated-text {
+            font-size: 24px;
+            line-height: 48px;
+            margin-bottom: 12px;
+            span {
+              font-weight: 900;
+            }
+          }
+          .decorated-text:nth-child(1) {
+            letter-spacing: 10px;
+          }
+          .decorated-text:nth-child(2) {
+            letter-spacing: 12px;
+          }
+          .decorated-text:nth-child(3) {
+            letter-spacing: 6.5px;
+          }
+          .decorated-text:nth-child(4) {
+            letter-spacing: 4px;
+          }
+        }
+      }
+    }
+  }
+  #description {
+    background: none;
+    .description-text-mobile {
+      margin: 50px auto 25px auto;
+      max-width: 576px;
+    }
+  }
+
+  #events {
+    background: none;
+    //background-size: 357px 449px;
+    min-height: max-content;
+    .events-container {
+      max-width: 375px;
+      margin: auto;
+      padding-left: 0;
+      h2 {
+        max-width: min-content;
+        text-align: center;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 10px;
+        margin: auto auto 40px;
+        font-weight: 700;
+      }
+      .event-description {
+        max-width: 350px;
+        font-size: 16px;
+        //letter-spacing: 20px;
+      }
+      #calendar {
+        max-width: 375px;
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        .calendar-box {
+          margin: auto;
+          display: grid;
+          width: 64px;
+          height: 64px;
+          max-width: 64px;
+          //border: 8px solid black;
+          //background: linear-gradient(135deg, #ED4825, #F58F3B);
+          div {
+            padding: 12px 18px;
+            grid-column: 1;
+            grid-row: 1;
+            color: #fff;
+            font-weight: 900;
+            margin: auto;
+            font-size: 24px;
+            line-height: 40px;
+            min-width: 64px;
+            min-height: max-content;
+            max-width: 64px !important;
+          ;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+          }
+        }
+        .calendar-box-title {
+          font-size: 16px;
+          margin-top: 12px;
+          line-height: normal;
+          color: #F3712F;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .event-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        width: 100%;
+        max-width: 355px;
+        overflow: hidden;
+        .grid-item {
+          img {
+            object-fit: contain;
+            max-width: 100%;
+          }
+        }
+        .etd-bold {
+          font-size: 18px;
+          font-weight: 900;
+          line-height: 18px;
+          word-wrap: break-word;
+        }
+        .etd-normal{
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  #newsletter {
+    .card {
+      margin-bottom: 0;
+    }
+  }
+  #footer {
+    padding-top: 20px;
+    .copy {
+      margin: auto auto 12px;
+      margin-left: 0;
+    }
+    .links {
+      //border-top: 1px solid rgba(204, 204, 204, 0.08);
+      padding-top: 12px;
+      margin-left: 0;
+    }
+  }
+}
+
+/*
+  Based from this article from Divya Manian -
+  http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html
+*/
+
+/* Clip text element */
+.clip-text {
+  font-size: 6em;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  /* Color fallback */
+  color: #fff;
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+  position: absolute;
+  content: '';
+}
+
+/* Background */
+.clip-text:before {
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+  position: absolute;
+  z-index: -1;
+  top: .125em;
+  right: .125em;
+  bottom: .125em;
+  left: .125em;
+  background-color: #fff;
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+  background-position: -.75em 0;
+}
+
+.clip-text--no-textzone:after {
+  content: none;
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+.clip-text_one {
+  background-image: linear-gradient(135deg, #ED4825, #F58F3B);
+}
